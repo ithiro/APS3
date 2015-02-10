@@ -13,6 +13,8 @@ import java.util.List;
  */
 public class ProcessaLancamentos {
     private BufferedReader reader;
+    private String linha;
+    private Lancamento daLinha;
 
     public ProcessaLancamentos(File arquivo) throws FileNotFoundException {
         reader = new BufferedReader(new FileReader(arquivo));
@@ -23,21 +25,21 @@ public class ProcessaLancamentos {
     }
     
     private String getNextLine() throws IOException {
-        String linha = reader.readLine();
+        linha = reader.readLine();
         return linha;
     }
     
     private Lancamento processaLinha(String linha) {
-        Lancamento daLinha(333333, 20141005,Saque caixa                                                 ,000000005000);
+        Lancamento daLinha(333333, 20141005,"Saque caixa                                                 ",000000005000);
         return daLinha;
     }
     
     private Lancamento getNextLancamento() throws IOException {
-        throw new UnsupportedOperationException("Não implementado");
+        return daLinha;
     }
     
     public List<Lancamento> getLancamentos() throws IOException {
-        throw new UnsupportedOperationException("Não implementado");
+        
     }
     
 }
