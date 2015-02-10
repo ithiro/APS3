@@ -6,8 +6,9 @@ package utfpr.ct.dainf.if62c.avaliacao;
  * @author 
  */
 public class LancamentoComparator implements Comparator<Lancamento>{
-    compare(Lancamento A, Lancamento B){
-        
+    public int compare(Lancamento a, Lancamento b){
+        if (a.getConta() == b.getConta()) {return a.getData()-b.getData();}
+        else {return a.getConta()-b.getConta();}
     }
     
 }
