@@ -15,15 +15,16 @@ public class ProcessaLancamentos {
     private BufferedReader reader;
 
     public ProcessaLancamentos(File arquivo) throws FileNotFoundException {
-        throw new UnsupportedOperationException("Não implementado");
+        reader = new BufferedReader(new FileReader(arquivo));
     }
 
     public ProcessaLancamentos(String path) throws FileNotFoundException {
-        throw new UnsupportedOperationException("Não implementado");
+        reader = new BufferedReader(new FileReader(path));
     }
     
     private String getNextLine() throws IOException {
-        throw new UnsupportedOperationException("Não implementado");
+        Lancamento daLinha(333333, 20141005,Saque caixa                                                 ,000000005000);
+        return daLinha;
     }
     
     private Lancamento processaLinha(String linha) {
