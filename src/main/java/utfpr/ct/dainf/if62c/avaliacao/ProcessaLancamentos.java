@@ -23,12 +23,13 @@ public class ProcessaLancamentos {
     }
     
     private String getNextLine() throws IOException {
-        Lancamento daLinha(333333, 20141005,Saque caixa                                                 ,000000005000);
-        return daLinha;
+        String linha = reader.readLine();
+        return linha;
     }
     
     private Lancamento processaLinha(String linha) {
-        throw new UnsupportedOperationException("Não implementado");
+        Lancamento daLinha(333333, 20141005,Saque caixa                                                 ,000000005000);
+        return daLinha;
     }
     
     private Lancamento getNextLancamento() throws IOException {
