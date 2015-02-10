@@ -5,6 +5,9 @@ package utfpr.ct.dainf.if62c.avaliacao;
  * Avaliação parcial.
  * @author 
  */
-public class LancamentoComparator {
+public class LancamentoComparator implements Comparator<Lancamento>{
+    compare(Lancamento A, Lancamento B){
+        
+    }
     
 }
