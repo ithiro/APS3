@@ -11,13 +11,13 @@ import java.util.Objects;
  */
 public class Lancamento {
     private Integer conta;
-    private Date data;
+    private int data;
     private String descricao;
     private Double valor;
     
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Lancamento(Integer conta, Date data, String descricao, Double valor) {
+    public Lancamento(Integer conta, int data, String descricao, Double valor) {
         this.conta = conta;
         this.data = data;
         this.descricao = descricao;
@@ -32,7 +32,7 @@ public class Lancamento {
         this.conta = conta;
     }
 
-    public Date getData() {
+    public int getData() {
         return data;
     }
 
